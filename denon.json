@@ -1,0 +1,18 @@
+{
+  "$schema": "https://deno.land/x/denon/schema.json",
+  "env": {
+    "TOKEN": "testglobalenvvar"
+  },
+  "scripts": {
+    "start": {
+      "cmd": "deno run index.ts",
+      "allow": ["env", "net", "read", "write"],
+      "env": {
+        "PORT": "5000"
+      }
+    }
+  },
+  "logger": {
+    "debug": true
+  }
+}
